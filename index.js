@@ -80,5 +80,5 @@ io.on('connection', (socket) => {
     }
 });
 
-console.log('Starting node on port', process.env.PORT);
-server.listen(process.env.PORT);
+console.log('Starting node on port', process.env.PORT || 8000);
+server.listen(process.env.PORT || 8000);
