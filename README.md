@@ -45,13 +45,17 @@ Once the Game starts, the user is presented with the 1st Stage of the Hangman Fi
 
 ### Instructions
 User will be asked to type a Letter to try to guess the Word. If the letter is part of the word then the letter show as deisplayed here:
+
 ![Instructions](images/instruction.jpg) 
 
 But if the Letter is wrong then it will go to the next stage of the Hangman Figure:
+
 ![Instructions](images/fail.jpg) 
 
 ### Quit
+
 Once the game is over either by loss or win. The game automatically quits.
+
 ![Play Game](images/win.jpg)
 
 [Back to top](#table-of-contents)
