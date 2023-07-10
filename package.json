@@ -4,9 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js",
-    "dev": "concurrently \"npm run server\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"     
+    "server": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
