@@ -1,14 +1,14 @@
 <body>
   <button onclick="window.location.reload()">Run Program</button>
-  <div id="hangman"></div>
+  <div id="python-hangman-game-ci"></div>
 
   <script>
       var term = new Terminal({
           cols: 80,
           rows: 24
       });
-      term.open(document.getElementById('hangman'));
-      term.writeln('Running startup command: python3 run.py');
+      term.open(document.getElementById('python-hangman-game-ci'));
+      term.writeln('Running startup command: python3 app.py');
       term.writeln('');
 
       var ws = new WebSocket(location.protocol.replace('http', 'ws') + '//' + location.hostname + (location.port ? (
