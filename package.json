@@ -8,7 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-  "postinstall": "npm install",
   "dependencies": {
     "node": "^20.4.0",
     "node-pty": "^0.10.1",
