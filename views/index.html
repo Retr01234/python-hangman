@@ -1,13 +1,13 @@
 <body>
   <button onclick="window.location.reload()">Run Program</button>
-  <div id="python-hangman"></div>
+  <div id="python-hangman-game-ci"></div>
 
   <script>
       var term = new Terminal({
           cols: 80,
           rows: 24
       });
-      term.open(document.getElementById('python-hangman'));
+      term.open(document.getElementById('python-hangman-game-ci'));
       term.writeln('Running startup command: python3 app.py');
       term.writeln('');
 

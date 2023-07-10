@@ -1,5 +1,5 @@
 {
-  "name": "python-hangman",
+  "name": "python-hangman-game-ci",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
