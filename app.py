@@ -40,3 +40,23 @@ def hangman():
       print("The Word was:", word)
       print("Better Luck next time.")
       break
+
+    # Tells the User to guess a Letter
+    attempt = input("Enter a letter: ").lower()
+
+    # Checks if the Users Input is Valid
+    if not attempt.isalpha() or len(guess) != 1:
+      print("You can't use that. Please enter a single letter.")
+      continue
+
+    # Checks if the Users Input has already been entered
+    if attempt in letters_tried:
+      print("You've already tried that. Try again.")
+      continue
+
+    # Adds the Guessed Letter to the List
+    letters_tried.append(attempt)
+
+    # Check if the Users Letter is in the Game's Word
+    if attempt not in word:
+      attempts -= 1
