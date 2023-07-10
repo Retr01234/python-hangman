@@ -37,16 +37,16 @@ Please find the live project [here:]()
 
 ### Introduction
 
-![Introduction](images/introduction.jpg) 
+![Introduction]() 
 
 ### Instructions
 
-![Instructions](images/instructions.jpg) 
+![Instructions]() 
 
 
 ### Start Game
 
-![Start Game](images/start.jpg) 
+![Start Game]() 
 
 
 ### Play Game
@@ -55,7 +55,7 @@ Please find the live project [here:]()
 
 ### Play Again or Quit
 
-![Play Game](images/game-over.jpg)
+![Play Game]()
 
 
 ## Future Features
@@ -80,21 +80,21 @@ Please find the live project [here:]()
 Testing was conducted very carefully through the entire project. Pep 8 validator came back with no issues
 [Pep8](http://pep8online.com/)
 
-![Validator Pep8](images/python-test.jpg)
+![Validator Pep8]()
 
 ### Exception/Error testing:
 
 - User's name validation was tested checking all possible inputs. Empty spaces, numbers or symbols not accepted.
 
-![Name Validation](images/name-validation.png)
+![Name Validation]()
 
-![Start Input Validation](images/start-input-validation.png)
+![Start Input Validation]()
 
-![Spot Input Validation](images/spot-input-validation.png)
+![Spot Input Validation]()
 
-![Same spot Input Validation](images/same-spot-validation.png)
+![Same spot Input Validation]()
 
-![Quit replay Validation](images/quit-replay-validation.png)
+![Quit replay Validation]()
 
 - Python Pylint Report:
 
