@@ -129,3 +129,14 @@ def hangman():
       """
     ]
     print(attempts[tries])
+
+  def display_word(word, letters_tried):
+    # Display the word with masked letters and guessed letters
+    masked_word = ""
+
+    for letter in word:
+      if letter in letters_tried:
+          masked_word += letter
+      else:
+          masked_word += "_"
+    print(masked_word)
