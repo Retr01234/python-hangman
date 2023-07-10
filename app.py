@@ -62,92 +62,92 @@ def hangman():
     if attempt not in word:
       attempts -= 1
   
-  def display_hangman(attempts):
-    # Hangman Figure for every failed attempt
-    tries = [
-      """
-        --------
-        |      |
-        |      O
-        |     \|/
-        |      |
-        |     / \\
-        -
-      """,
-      """
-        --------
-        |      |
-        |      O
-        |     \|/
-        |      |
-        |     / 
-        -
-      """,
-      """
-        --------
-        |      |
-        |      O
-        |     \|/
-        |      |
-        |      
-        -
-      """,
-      """
-        --------
-        |      |
-        |      O
-        |     \|
-        |      |
-        |     
-        -
-      """,
-      """
-        --------
-        |      |
-        |      O
-        |      |
-        |      |
-        |     
-        -
-      """,
-      """
-        --------
-        |      |
-        |      O
-        |    
-        |      
-        |     
-        -
-      """,
-      """
-        --------
-        |      |
-        |      
-        |    
-        |      
-        |     
-        -
-      """
-    ]
-    print(attempts[tries])
+def display_hangman(attempts):
+  # Hangman Figure for every failed attempt
+  stages = [
+    """
+      --------
+      |      |
+      |      O
+      |     \|/
+      |      |
+      |     / \\
+      -
+    """,
+    """
+      --------
+      |      |
+      |      O
+      |     \|/
+      |      |
+      |     / 
+      -
+    """,
+    """
+      --------
+      |      |
+      |      O
+      |     \|/
+      |      |
+      |      
+      -
+    """,
+    """
+      --------
+      |      |
+      |      O
+      |     \|
+      |      |
+      |     
+      -
+    """,
+    """
+      --------
+      |      |
+      |      O
+      |      |
+      |      |
+      |     
+      -
+    """,
+    """
+      --------
+      |      |
+      |      O
+      |    
+      |      
+      |     
+      -
+    """,
+    """
+      --------
+      |      |
+      |      
+      |    
+      |      
+      |     
+      -
+    """
+  ]
+  print(stages[attempts])
 
-  # Display the games word with all Letters (Correct & Attempted)
-  def display_word(word, letters_tried):
-    masked_word = ""
+# Display the games word with all Letters (Correct & Attempted)
+def display_word(word, letters_tried):
+  masked_word = ""
 
-    for letter in word:
-      if letter in letters_tried:
-        masked_word += letter
-      else:
-        masked_word += "_"
-    print(masked_word)
+  for letter in word:
+    if letter in letters_tried:
+      masked_word += letter
+    else:
+      masked_word += "_"
+  print(masked_word)
 
-  # Check if all the Users attempted Letters have been guessed
-  def guessed_word(word, letters_tried):
-    for letter in word:
-      if letter not in letters_tried:
-        return False
-    return True
+# Check if all the Users attempted Letters have been guessed
+def guessed_word(word, letters_tried):
+  for letter in word:
+    if letter not in letters_tried:
+      return False
+  return True
 
 # Launch Game
 hangman()
