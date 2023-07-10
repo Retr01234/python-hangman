@@ -23,7 +23,7 @@ def hangman():
   attempts = 6
 
   while True:
-    # Display the hangman figure
+    # Display The Hangman Figure
     display_hangman(attempts)
 
     # Display the Game Word with Correct & Incorrect Letters
