@@ -112,7 +112,7 @@ The deployment is made using [Heroku](https://www.heroku.com/) following the lis
 4. Click on "Create app"
 4. When the app is created click on Setting 
 5. To improve compatibility with various Python libraries add  Config Var with Key = PORT and the Value = 8000 
-5. Add 2 buildpacks: Python and then Nodejs in this specific order
+5. Add a buildpack: Python
 6. Go back at the top and click on "Deploy" and select "GitHub"
 7. Scroll down and click on 'Connect to GitHub'
 8. Search for your GitHub repository name by typing it 
