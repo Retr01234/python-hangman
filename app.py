@@ -1,3 +1,4 @@
+# Importing Random Module that always guesses a different word from the List
 import random
 
 def hangman():
@@ -31,8 +32,8 @@ def hangman():
 
     # Checks to see if the Word has been completely guessed
     if guessed_word(word, letters_tried):
-        print("Congratulations! You won!")
-        break
+      print("Congratulations! You won!")
+      break
 
     # Checks to see if the User has anymore attempts
     if attempts == 0:
@@ -136,9 +137,9 @@ def hangman():
 
     for letter in word:
       if letter in letters_tried:
-          masked_word += letter
+        masked_word += letter
       else:
-          masked_word += "_"
+        masked_word += "_"
     print(masked_word)
 
   # Check if all the Users attempted Letters have been guessed
