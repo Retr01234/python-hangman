@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build",
-    "server": "nodemon server.js"
+    "build": "cd heroku && npm run build",
+    "install": "cd heroku && npm install",
+    "start": "node server",
+    "server": "nodemon server",
+    "heroku": "npm start --prefix heroku",
+    "dev": "concurrently \"npm run server\" \"npm run heroku\""
   },
   "author": "",
   "license": "ISC",
