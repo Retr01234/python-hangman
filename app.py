@@ -45,7 +45,7 @@ def hangman():
     attempt = input("Enter a letter: ").lower()
 
     # Checks if the Users Input is Valid
-    if not attempt.isalpha() or len(guess) != 1:
+    if not attempt.isalpha() or len(attempt) != 1:
       print("You can't use that. Please enter a single letter.")
       continue
 
@@ -60,3 +60,17 @@ def hangman():
     # Check if the Users Letter is in the Game's Word
     if attempt not in word:
       attempts -= 1
+  
+  def display_hangman(attempts):
+    # Hangman Figure for every failed attempt
+    tries = [
+      """
+        --------
+        |      |
+        |      O
+        |     \|/
+        |      |
+        |     / \\
+        -
+      """,
+    ]
