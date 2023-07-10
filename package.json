@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "build": "cd heroku && npm run build",
-    "install": "cd heroku && npm install",
-    "start": "node server",
-    "server": "nodemon server",
-    "heroku": "npm start --prefix heroku",
-    "dev": "concurrently \"npm run server\" \"npm run heroku\""
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "install": "npm install",
+    "dev": "concurrently \"npm run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"     
   },
   "author": "",
   "license": "ISC",
